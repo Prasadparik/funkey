@@ -1,0 +1,42 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+// MUI
+import { TextField, Grid, Item, Paper, Button } from "@mui/material";
+
+// Image
+import LoginBg from "../assets/imgs/loginBg.jpg";
+import { Box } from "@mui/system";
+
+export default function Login() {
+  return (
+    <>
+      <Grid container spacing={2} className="login-container">
+        <Grid item xs={6} md={8} className="login-img-wrap"></Grid>
+        <Grid item xs={6} md={4} className="login-wrap">
+          <div className="form-wrapper">
+            <form>
+              <h1 style={{ textAlign: "center" }}>FunKey</h1>
+              <br />
+              <TextField id="outlined-basic" label="Email" variant="filled" />
+              <br />
+              <TextField
+                style={{ marginTop: "1rem" }}
+                id="outlined-basic"
+                label="Password"
+                variant="filled"
+              />
+              <br />
+              <Button className="Login-Btn" variant="contained">
+                Login
+              </Button>
+              <p style={{ marginTop: "1rem" }}>
+                Already have an account? <Link to={"/signup"}>sign up</Link>
+              </p>
+            </form>
+          </div>
+        </Grid>
+      </Grid>
+    </>
+  );
+}

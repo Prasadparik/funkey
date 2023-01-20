@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container {
+  margin: 0;
+  padding: 0rem;
+  background-image: url("./assets/imgs/loginBg.jpg");
+  background-size: cover;
+}
+.signup-container {
+  margin: 0;
+  padding: 0rem;
+  background-image: url("./assets/imgs/loginBg3.jpg");
+  background-size: cover;
+}
+.login-wrap {
+  background-color: rgb(255, 255, 255);
+  border-left: 1rem solid rgba(255, 179, 71, 0.645);
+}
+#outlined-basic {
+}
+.login-img-wrap {
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form-wrapper {
+  /* background-color: rgb(116, 229, 161); */
+  width: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Login-Btn {
+  padding: 1rem !important;
+  width: 100%;
+  margin-top: 1rem !important;
+  background: rgb(255, 209, 0);
+  background: linear-gradient(
+    22deg,
+    rgba(255, 209, 0, 1) 0%,
+    rgba(244, 159, 0, 1) 100%
+  );
+  color: black !important;
+  text-align: center;
 }
